@@ -29,8 +29,8 @@ jobs:
     name: Build extension binaries
     uses: duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml@main
     with:
-      duckdb_version: v1.2.2
-      ci_tools_version: v1.2.2
+      duckdb_version: v1.4.0
+      ci_tools_version: main
       extension_name: ${{ github.event.inputs.extension_name || 'extension_alias' }}
       extension_canonical: ${{ github.event.inputs.extension_canonical || 'nanoarrow' }}
       extra_toolchains: python3
